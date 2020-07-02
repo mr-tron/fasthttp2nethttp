@@ -22,19 +22,9 @@ func MyOldLegacyFasthttpHandler(ctx *fasthttp.RequestCtx) {
 }
 
 
-
-
 func main() {
 handler := fasthttp2nethttp.FastHTTPHandlerWrapper(MyOldLegacyFasthttpHandler)
 // now you can serve handler with any framework like default net/http or wrap for another framework like echo.
 
 }
-
-
-
-
-
-
-
-
 ```
